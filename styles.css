@@ -1,0 +1,151 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+header, .three, .six{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.three{
+    background-color: #F9FBFF;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+.one{
+    width: 40%;
+}
+.two{
+    width: 30%;
+    align-items: center;
+}
+.four{
+    width: 47%;
+}
+.five{
+    width: 38%;
+}
+body{
+    padding: 2% 2%;
+    margin: 0 auto;
+    max-width: 1450px;
+    width: 100%;
+}
+.seven img, .five img, .nine img, .ten img{
+    width: 100%;
+    padding: 10%;
+}
+.eight{
+    width: 40%;
+}
+.nine{
+    display: flex;
+    align-items: center;
+}
+.eleven{
+    position: absolute;
+    top: 5%;
+    width: 40%;
+    left: 12%;
+    background-color: #F9FBFF;
+    z-index: 1;
+    padding: 2%;
+}
+.nine{
+    justify-content: flex-end;
+    position: relative;
+}
+header, .three, .six, .nine{
+    border: 3px solid #155EEF;
+    border-radius: 10px;
+    padding: 0 3%;
+    margin-top: 2%;
+}
+footer{
+    border: 3px solid #155EEF;
+    border-radius: 10px;
+    padding: 0 3%;
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.thirteen{
+    font-size: 40px;
+    color: #155EEF;
+    padding-top: 2%;
+}
+.fourteen {
+    background-color: #155EEF;
+    padding: 2%;
+    margin-top: 5%;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+.four p, .eight p{
+    padding-top: 2%;
+}
+.fifteen, .seventeen, .eleven {
+  font-size: 20px;
+}
+.sixteen{
+    border: 2px solid #155EEF;
+    color: #155EEF;
+    background-color: white;
+    padding: 2%;
+    border-radius: 8px;
+}
+h3, .eighteen{
+    padding: 3%;
+}
+a{
+    text-decoration: none;
+}
+.ten{
+    padding-top: 5%;
+}
+.material{
+    display: none;
+}
+@media screen and (max-width: 740px) {
+    .material{
+    display: block;
+    }
+    nav {
+        display: none;
+    }
+    .eleven{
+        position:initial
+       }
+    footer{
+        flex-wrap: wrap;
+    }
+    .f1{
+        width: 100%;
+        text-align: center;
+    }
+    .f2{
+        justify-content: center;
+    }
+    .f3{
+        width: 100%;
+        text-align: center;
+    }
+    .ten img {
+        display: none;
+       } 
+}
+
+@media screen and (max-width: 715px) {
+    section{
+        flex-direction: column;
+    } 
+     section > div{
+        width: 100% !important;
+        text-align: center;
+    }
+    }
