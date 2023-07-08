@@ -108,19 +108,53 @@ a{
 .ten{
     padding-top: 5%;
 }
-.material{
+.hamburger, .close{
+    display: none;
+    cursor: pointer;
+}
+.nav2{
+    flex-direction: column;
+    justify-content: space-between;
     display: none;
 }
+
 @media screen and (max-width: 740px) {
-    .material{
+    .hamburger {
     display: block;
+    width: 55%;
     }
     nav {
         display: none;
     }
     .eleven{
         position:initial
-       }
+    }
+    .nav2.visible{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .alpha, .delta{
+        padding-top: 10%;
+    }
+    .beta{
+        padding-top: 2%;
+    }
+    .alpha, .delta, .beta{
+        color: black;
+    }
+    .close {
+        display: block;
+        width: 22%;
+        margin-right: 6%;
+    }
+    .close.inactive {
+        display: none;
+    }
+    .close.hide {
+        display: none;
+    }
     footer{
         flex-wrap: wrap;
     }
